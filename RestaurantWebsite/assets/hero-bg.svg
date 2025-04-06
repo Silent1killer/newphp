@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4238;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c2620;stop-opacity:1" />
+    </linearGradient>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="2" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.05 0" result="coloredNoise" />
+      <feComposite operator="in" in="coloredNoise" in2="SourceGraphic" result="monoNoise"/>
+      <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad)" filter="url(#noise)" />
+  <g fill="#9c7a54" opacity="0.07">
+    <path d="M400,500 C450,550 500,550 550,500 C600,450 650,450 700,500 C750,550 800,550 850,500" stroke="#9c7a54" stroke-width="3" fill="none" />
+    <path d="M300,400 C350,450 400,450 450,400 C500,350 550,350 600,400 C650,450 700,450 750,400" stroke="#9c7a54" stroke-width="3" fill="none" />
+    <path d="M500,600 C550,650 600,650 650,600 C700,550 750,550 800,600 C850,650 900,650 950,600" stroke="#9c7a54" stroke-width="3" fill="none" />
+    <circle cx="200" cy="300" r="80" />
+    <circle cx="1000" cy="400" r="100" />
+    <circle cx="600" cy="700" r="120" />
+    <circle cx="800" cy="200" r="90" />
+  </g>
+</svg>

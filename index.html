@@ -1,0 +1,208 @@
+<!-- <?php
+$page_title = "Home";
+include 'includes/header.php';
+?> -->
+<html>
+<!-- Hero Section -->
+<section class="hero-section position-relative">
+    <div class="hero-image-container">
+        <div class="overlay"></div>
+    </div>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-md-8 text-white text-center text-md-start">
+                <h1 class="display-3 fw-bold mb-4 animate__animated animate__fadeInUp">Welcome to The Desires</h1>
+                <p class="fs-5 mb-5 animate__animated animate__fadeInUp animate__delay-1s">Experience fine dining with our exquisite cuisine, elegant ambiance, and impeccable service.</p>
+                <div class="animate__animated animate__fadeInUp animate__delay-2s">
+                    <a href="reservation.php" class="btn btn-primary btn-lg me-3 mb-3 mb-md-0">Reserve a Table</a>
+                    <a href="menu.php" class="btn btn-outline-light btn-lg">View Menu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 class="section-title">Why Choose Us</h2>
+                <p class="section-subtitle">Discover what makes our restaurant special</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm feature-card">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-utensils fa-2x"></i>
+                        </div>
+                        <h3 class="card-title h5">Exquisite Cuisine</h3>
+                        <p class="card-text">Our chef creates memorable dishes using the finest locally-sourced ingredients with a fusion of international flavors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm feature-card">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-wine-glass-alt fa-2x"></i>
+                        </div>
+                        <h3 class="card-title h5">Elegant Ambiance</h3>
+                        <p class="card-text">Immerse yourself in our sophisticated yet comfortable atmosphere designed for an unforgettable dining experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm feature-card">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-concierge-bell fa-2x"></i>
+                        </div>
+                        <h3 class="card-title h5">Impeccable Service</h3>
+                        <p class="card-text">Our attentive staff ensures your comfort and satisfaction with personalized service throughout your visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Specials Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 class="section-title">Chef's Specials</h2>
+                <p class="section-subtitle">Our most popular and signature dishes</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 special-card">
+                    <div class="card-body p-4">
+                        <h3 class="card-title h5 mb-3">Herb-Crusted Salmon</h3>
+                        <p class="card-text mb-3">Wild-caught salmon with a crunchy herb crust, served with saffron risotto and seasonal vegetables.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="special-price">$28</span>
+                            <a href="menu.php" class="btn btn-sm btn-outline-secondary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 special-card">
+                    <div class="card-body p-4">
+                        <h3 class="card-title h5 mb-3">Filet Mignon</h3>
+                        <p class="card-text mb-3">Premium cut of beef tenderloin, served with truffle mashed potatoes and wild mushroom sauce.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="special-price">$36</span>
+                            <a href="menu.php" class="btn btn-sm btn-outline-secondary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 special-card">
+                    <div class="card-body p-4">
+                        <h3 class="card-title h5 mb-3">Chocolate Lava Cake</h3>
+                        <p class="card-text mb-3">Rich chocolate cake with a molten center, served with house-made vanilla bean ice cream.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="special-price">$12</span>
+                            <a href="menu.php" class="btn btn-sm btn-outline-secondary">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h2 class="section-title">Guest Experiences</h2>
+                <p class="section-subtitle">What our customers say about us</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial-item text-center">
+                                <div class="testimonial-content p-4">
+                                    <p class="mb-4"><i class="fas fa-quote-left me-2"></i>The food was absolutely exquisite, from preparation to presentation, very pleasing. We especially enjoyed the attentive but not intrusive service.<i class="fas fa-quote-right ms-2"></i></p>
+                                    <h5 class="mb-1">Sarah Johnson</h5>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-item text-center">
+                                <div class="testimonial-content p-4">
+                                    <p class="mb-4"><i class="fas fa-quote-left me-2"></i>This is the best fine dining experience in the city. The chef's tasting menu with wine pairings was exceptional. We'll definitely be returning soon!<i class="fas fa-quote-right ms-2"></i></p>
+                                    <h5 class="mb-1">Michael Rodriguez</h5>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonial-item text-center">
+                                <div class="testimonial-content p-4">
+                                    <p class="mb-4"><i class="fas fa-quote-left me-2"></i>I celebrated my anniversary here and the staff went above and beyond to make our night special. The ambiance, service, and food were all simply perfect.<i class="fas fa-quote-right ms-2"></i></p>
+                                    <h5 class="mb-1">Emily Chen</h5>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 text-white text-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="mb-4">Ready to experience exceptional dining?</h2>
+                <p class="lead mb-4">Make a reservation today and treat yourself to an unforgettable culinary journey.</p>
+                <a href="reservation.php" class="btn btn-primary btn-lg">Reserve Your Table</a>
+            </div>
+        </div>
+    </div>
+</section>
+</html>
+<!-- <?php include 'includes/footer.php'; ?> -->
